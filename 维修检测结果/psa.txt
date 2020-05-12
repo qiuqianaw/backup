@@ -1,0 +1,399 @@
+ImageBase: 0x755CA000
+EPSA Build  4400.13 UEFI ROM, Service Tag: HSTZGX2, Node: 0, SystemID: 0922, BIOS: 1.6.0
+
+
+[ Cables ]
+EPPID = CN0JKGD4PE10097P03OHA00
+Platform SSID = 0922
+Power Supply = Installed
+CPU = Installed
+Memory Module = Installed
+Functional Memory = Installed
+Memory SPD = Installed
+Keyboard = Installed
+LCD Cable = Installed
+Wireless Switch = On
+Wireless LAN = Installed
+Bluetooth = Installed
+
+[ PCIe ]
+PCIe Physical Slots = 3
+       Bus  1, PCIe Slot 01: Vendor 10DE, Device 1F91, SubVendor 1028, SubDevice 0922, Tag 0100
+       Bus  3, PCIe Slot 20: Vendor 8086, Device 15DA, SubVendor 1028, SubDevice 0922, Tag 0200
+       Bus  5, PCIe Slot 01: empty
+       Bus  4, PCIe Slot 20: Vendor 8086, Device 15D9, SubVendor 1028, SubDevice 0922, Tag 0400
+       Bus 3A, PCIe Slot 08: Vendor 8086, Device 15DB, SubVendor 1028, SubDevice 0922, Tag 3A00
+
+[ LCD/Display Panel ]
+Horizontal resolution = 1920 pixels
+Vertical resolution = 1080 pixels
+EDID Length = 128 bytes
+LCD Panel Manufacture ID = AE0D
+LCD Panel Product ID = 15F6
+LCD Panel supports BIST = Yes
+
+[ Storage ]
+Hard Drive 1-0-9
+       OEM: SK hynix, product: BC501 NVMe SK hynix 512GB, revision: 80002C00
+       S/N: ND95N45681260590Q, type: NVMe, size: 512 GB M.2, PPID: KR0RM7RKSK50095908Z5A01
+
+[ Boot ]
+BootPath = MBR of Hard Drive 1-0-9
+
+[ USB ]
+USB Receiver = 046D:C52F
+      Manufacturer = Logitech
+Integrated Webcam = 0BDA:565A
+      Manufacturer = CN0HK46K8LG0097CFJT5A01
+      Serial Number = 200901010001
+USB2.0-CRW = 0BDA:0177
+      Manufacturer = Generic
+      Serial Number = 20121112761000000
+Wireless Cntrlr = 8087:0AAA
+
+[ Video ]
+       Intel(R) Graphics Controller,
+       Memory Size 7.91 MB, Address: 0x80000000
+
+[ Battery ]
+
+Primary Battery
+ChargeCycles = 52
+Temperature = 29C
+Voltage = 12102mV
+Current = 0mA
+RemainingCapacity =  5.715Ah
+FullCapacity =  7.670Ah
+RelativeCharge =  75%
+BatteryHealth = Excellent
+ManufactureDate = 7/25/2019
+SerialNumber = 1054
+
+Charger
+ChargerState = Installed
+
+[ Fan ]
+Processor Fan = 3139 RPM
+Video Fan = 3094 RPM
+
+[ Processor ]
+Processor sockets = 1
+       U3E1: Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz
+
+[ Memory ]
+System Memory = 8192 MB
+  DIMM A, 8192 MB, DDR4, 2666 MHz (Max 2667), MFG: SK Hynix, S/N: 72D9F094, P/N: HMA81GS6JJR8N-VK
+
+[ System Management ]
+ProcHot Temperature = 100C
+Temperature Sensor = CPU Thermistor
+Temperature Sensor = PCH Thermistor
+Temperature Sensor = sensor_Remote Thermistor
+Temperature Sensor = sensor_Local Thermistor
+Temperature Sensor = GPU Thermistor
+
+** Cables - Functional Test **
+Started: 03/25/2020 17:27:53  
+
+[ Keyboard ]
+Ended: 03/25/2020 17:27:53, Elapsed time: 00:00:00
+Test Results : Pass
+
+
+** PCIe Bus - PCIe Test **
+Started: 03/25/2020 17:27:53  
+Bus 01: Link Trained x8, PCIe Slot 01
+Bus 02: Link Trained x4, PCIe Slot 20
+Bus 01: Link Trained x8, PCIe Slot 01
+Bus 03: Link Trained x4, PCIe Slot 20
+Bus 04: Link Trained x4
+Bus 05: Link Not Active, PCIe Slot 01 empty
+Bus 3A: Link Trained x4, PCIe Slot 08
+Bus 04: Link Trained x4, PCIe Slot 20
+Bus 3A: Link Trained x4, PCIe Slot 08
+Ended: 03/25/2020 17:27:53, Elapsed time: 00:00:00
+Test Results : Pass
+
+
+** LCD/Display Panel - Functional Test **
+Started: 03/25/2020 17:27:53  
+Ended: 03/25/2020 17:28:03, Elapsed time: 00:00:10
+Test Results : Pass
+
+
+** Hard Drive 1-0-9 - SMART Health Test **
+Started: 03/25/2020 17:28:03  
+Checking SMART Health log page ...
+Ended: 03/25/2020 17:28:03, Elapsed time: 00:00:00
+Test Results : Pass
+
+
+** Hard Drive 1-0-9 - DST Short Test **
+Started: 03/25/2020 17:28:03  
+Running: 03/25/2020 17:28:03, Elapsed time: 00:00:00
+Test Results : Running
+
+
+** OS Boot Path 1-0-9 - Functional Test **
+Started: 03/25/2020 17:28:03  
+Ended: 03/25/2020 17:28:03, Elapsed time: 00:00:00
+Test Results : Pass
+
+
+** USB Devices - Device Ping **
+Started: 03/25/2020 17:28:03  
+USB Receiver 046D:C52F
+Integrated Webcam 0BDA:565A
+USB2.0-CRW 0BDA:0177
+Wireless Cntrlr 8087:0AAA
+Ended: 03/25/2020 17:28:03, Elapsed time: 00:00:00
+Test Results : Pass
+
+
+** Integrated Webcam - Sensor-Communication-Test **
+Started: 03/25/2020 17:28:03  
+Ended: 03/25/2020 17:28:03, Elapsed time: 00:00:00
+Test Results : Pass
+
+
+** Integrated Webcam - Serial-Flash-Checking-Test **
+Started: 03/25/2020 17:28:03  
+Ended: 03/25/2020 17:28:04, Elapsed time: 00:00:01
+Test Results : Pass
+
+
+** Integrated Webcam - Register-Test **
+Started: 03/25/2020 17:28:04  
+Ended: 03/25/2020 17:28:04, Elapsed time: 00:00:00
+Test Results : Pass
+
+
+** Integrated Webcam - Controller-Test **
+Started: 03/25/2020 17:28:04  
+Ended: 03/25/2020 17:28:04, Elapsed time: 00:00:00
+Test Results : Pass
+
+
+** Integrated Webcam - Luminace-000-Test **
+Started: 03/25/2020 17:28:04  
+Ended: 03/25/2020 17:28:04, Elapsed time: 00:00:00
+Test Results : Pass
+
+
+** Integrated Webcam - Blink-LED-Test **
+Started: 03/25/2020 17:28:04  
+Ended: 03/25/2020 17:28:05, Elapsed time: 00:00:01
+Test Results : Pass
+
+
+** Video Card - Video Card Connection Test **
+Started: 03/25/2020 17:28:05  
+Ended: 03/25/2020 17:28:05, Elapsed time: 00:00:00
+Test Results : Pass
+
+
+** Video Card - Video Memory Test **
+Started: 03/25/2020 17:28:05  
+Testing 7.91 MB at address 0x80000000
+Ended: 03/25/2020 17:28:06, Elapsed time: 00:00:01
+Test Results : Pass
+
+
+** Primary Battery - Functional Test **
+Started: 03/25/2020 17:28:06  
+Ended: 03/25/2020 17:28:06, Elapsed time: 00:00:00
+Test Results : Pass
+
+
+** Charger - Functional Test **
+Started: 03/25/2020 17:28:06  
+AC Adapter Present: Yes
+AC Adapter Power: 130 Watts
+Ended: 03/25/2020 17:28:06, Elapsed time: 00:00:00
+Test Results : Pass
+
+
+** Processor Fan - Functional Test **
+Started: 03/25/2020 17:28:06  
+Low  Speed RPM ........: 2200
+High Speed RPM ........: 4900
+Max Speed RPM .........: 5400
+Detected fan RPM ......: 3143
+BIOS required in range    0
+BIOS maximum samples      0
+Required samples in range 1
+Maximum samples           30
+Test method ...........: Box
+Target fan RPM.........: 2200
+Detected fan RPM.......: 2929
+Tolerance in percent...: 40
+BIOS required in range    0
+BIOS maximum samples      0
+Required samples in range 1
+Maximum samples           30
+Test method ...........: Box
+Target fan RPM.........: 4900
+Detected fan RPM.......: 3424
+Tolerance in percent...: 40
+Ended: 03/25/2020 17:28:10, Elapsed time: 00:00:04
+Test Results : Pass
+
+
+** Video Fan - Functional Test **
+Started: 03/25/2020 17:28:10  
+Low  Speed RPM ........: 2200
+High Speed RPM ........: 4900
+Max Speed RPM .........: 5400
+Detected fan RPM ......: 3092
+BIOS required in range    0
+BIOS maximum samples      0
+Required samples in range 1
+Maximum samples           30
+Test method ...........: Box
+Target fan RPM.........: 2200
+Detected fan RPM.......: 2862
+Tolerance in percent...: 40
+BIOS required in range    0
+BIOS maximum samples      0
+Required samples in range 1
+Maximum samples           30
+Test method ...........: Box
+Target fan RPM.........: 4900
+Detected fan RPM.......: 3389
+Tolerance in percent...: 40
+Ended: 03/25/2020 17:28:14, Elapsed time: 00:00:04
+Test Results : Pass
+
+
+** Processor - Various Processor Tests **
+Started: 03/25/2020 17:28:14  
+Running Dirty Cache Reads Test
+Running Alternating CPU Writes Test
+Running Random Access Thrash Test
+Running CPU Stress Test
+Ended: 03/25/2020 17:28:37, Elapsed time: 00:00:23
+Test Results : Pass
+
+
+** Hard Drive 1-0-9 - DST Short Test **
+Started: 03/25/2020 17:28:03  
+Ended: 03/25/2020 17:28:37, Elapsed time: 00:00:34
+Test Results : Pass
+
+
+** Memory - Data Bus Stress Test **
+Started: 03/25/2020 17:28:37  
+Testing with 12 CPUs
+Allocated 0x1DFEEE000 bytes (7678 MB) for testing
+Testing 1013 MB at 0x100000 
+Testing 355 MB at 0x40400000 
+Testing 216 MB at 0x567F6000 
+Testing 5 MB at 0x750AF000 
+Testing 6088 MB at 0x100000000 
+Ended: 03/25/2020 17:28:46, Elapsed time: 00:00:09
+Test Results : Pass
+
+
+** Memory - WCMATS Test **
+Started: 03/25/2020 17:28:46  
+Testing with 12 CPUs
+Allocated 0x1DFEEE000 bytes (7678 MB) for testing
+Testing 1013 MB at 0x100000 
+Testing 355 MB at 0x40400000 
+Testing 216 MB at 0x567F6000 
+Testing 5 MB at 0x750AF000 
+Testing 6088 MB at 0x100000000 
+Ended: 03/25/2020 17:29:46, Elapsed time: 00:01:00
+Test Results : Pass
+
+
+** System Management - Functional Test **
+Started: 03/25/2020 17:29:46  
+Ended: 03/25/2020 17:29:46, Elapsed time: 00:00:00
+Test Results : Pass
+
+
+** Hard Drive 1-0-9 - DST Long Test **
+Started: 03/25/2020 17:30:02  
+Running: 03/25/2020 17:30:02, Elapsed time: 00:00:00
+Test Results : Running
+
+
+** Memory - March C- Test **
+Started: 03/25/2020 17:30:02  
+Testing with 12 CPUs
+Allocated 0x1DFEEE000 bytes (7678 MB) for testing
+Testing 1013 MB at 0x100000 
+Testing 355 MB at 0x40400000 
+Testing 216 MB at 0x567F6000 
+Testing 5 MB at 0x750AF000 
+Testing 6088 MB at 0x100000000 
+Ended: 03/25/2020 17:30:48, Elapsed time: 00:00:46
+Test Results : Pass
+
+
+** Memory - XMATS32 Test **
+Started: 03/25/2020 17:30:48  
+Testing with 12 CPUs
+Allocated 0x1DFEEE000 bytes (7678 MB) for testing
+Testing 1013 MB at 0x100000 
+Testing 355 MB at 0x40400000 
+Testing 216 MB at 0x567F6000 
+Testing 5 MB at 0x750AF000 
+Testing 6088 MB at 0x100000000 
+Ended: 03/25/2020 17:34:49, Elapsed time: 00:04:01
+Test Results : Pass
+
+
+** Memory - Ground Bounce Test **
+Started: 03/25/2020 17:34:49  
+Testing with 12 CPUs
+Allocated 0x1DFEEE000 bytes (7678 MB) for testing
+Testing 1013 MB at 0x100000 
+Testing 355 MB at 0x40400000 
+Testing 216 MB at 0x567F6000 
+Testing 5 MB at 0x750AF000 
+Testing 6088 MB at 0x100000000 
+Ended: 03/25/2020 17:34:56, Elapsed time: 00:00:07
+Test Results : Pass
+
+
+** Memory - WCMch Test **
+Started: 03/25/2020 17:34:56  
+Testing with 12 CPUs
+Allocated 0x1DFEEE000 bytes (7678 MB) for testing
+Testing 1013 MB at 0x100000 
+Testing 355 MB at 0x40400000 
+Testing 216 MB at 0x567F6000 
+Testing 5 MB at 0x750AF000 
+Testing 6088 MB at 0x100000000 
+Ended: 03/25/2020 17:37:11, Elapsed time: 00:02:15
+Test Results : Pass
+
+
+** Memory - Random Pattern Test **
+Started: 03/25/2020 17:37:11  
+Testing with 12 CPUs
+Allocated 0x1DFEEE000 bytes (7678 MB) for testing
+Testing 1013 MB at 0x100000 
+Testing 355 MB at 0x40400000 
+Testing 216 MB at 0x567F6000 
+Testing 5 MB at 0x750AF000 
+Testing 6088 MB at 0x100000000 
+Ended: 03/25/2020 17:38:24, Elapsed time: 00:01:13
+Test Results : Pass
+
+
+** Hard Drive 1-0-9 - DST Long Test **
+Started: 03/25/2020 17:30:02  
+Ended: 03/25/2020 17:38:24, Elapsed time: 00:08:22
+Test Results : Pass
+
+
+ServiceTag HSTZGX2 
+
+All tests passed.
+Service Tag : HSTZGX2
+Result Code : 2000-0000
+Validation Code : 76044
+
