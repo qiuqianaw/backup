@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <SupportAssistPrebootDiagnosticLog>
+    <Schema>1.0.0</Schema>
+    <LogNumber>5</LogNumber>
+    <LogTimeStamp>03/27/2020 17:58:32</LogTimeStamp>
+    <ePSA_Data>
+      <Result>Abort</Result>
+      <ReturnCode>BOOT_HOST_OS</ReturnCode>
+      <DevicesTested>Memory, Hard Drive</DevicesTested>
+      <ePSAFullVersion>4400.13</ePSAFullVersion>
+      <ePSAInvocationCount>5</ePSAInvocationCount>
+    </ePSA_Data>
+    <BIOS_Data>
+      <ErrorCategory>NO_BOOT</ErrorCategory>
+      <ErrorMessage><![CDATA[Operating System Loader failed signature verification. WARNING: The file may have been tampered with! All bootable devices failed Secure Boot verification.
+]]></ErrorMessage>
+      <Flags>SOS_AVAILABLE</Flags>
+      <SOS_Available>TRUE</SOS_Available>
+      <TimeOutSeconds>0</TimeOutSeconds>
+    </BIOS_Data>
+  </SupportAssistPrebootDiagnosticLog>
